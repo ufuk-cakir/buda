@@ -33,7 +33,7 @@ const statsObserver = new IntersectionObserver((entries) => {
             animateValue(entry.target, 0, value, 2000);
         }
     });
-}, { threshold: 0.1 });
+}, { threshold: 0. });
 
 document.querySelectorAll('.animate-value').forEach(stat => {
     statsObserver.observe(stat);

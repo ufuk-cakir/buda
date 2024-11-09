@@ -1,8 +1,8 @@
 {% extends "base.html" %}
 
 {% block content %}
-<div class="space-y-12">
-    <section id="summary" class="text-center">
+<div class="space-y-0">
+    <section id="summary" class="min-h-screen flex flex-col justify-center items-center text-center">
         <h2 class="text-3xl font-bold mb-4">Summary</h2>
         <p class="text-xl mb-4">{{ data.summary }}</p>
         <button onclick="scrollToSection('stats')" class="bg-white text-purple-500 py-2 px-4 rounded hover:bg-gray-100 transition duration-300">
@@ -10,7 +10,7 @@
         </button>
     </section>
 
-    <section id="stats" class="text-center">
+    <section id="stats" class="min-h-screen flex flex-col justify-center items-center text-center">
         <h2 class="text-3xl font-bold mb-4">Your Stats</h2>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
             {% for title, value in data.stats.items() %}
@@ -25,17 +25,17 @@
         </button>
     </section>
 
-    <section id="watching" class="text-center">
+    <section id="watching" class="min-h-screen flex flex-col justify-center items-center text-center">
         <h2 class="text-3xl font-bold mb-4">Who You're Watching</h2>
-        <div class="w-full h-64">
-            <canvas id="watchingChart"></canvas>
+        <div class="w-full h-96 flex justify-center items-center">
+            <canvas id="watchingChart" width="400" height="400"></canvas>
         </div>
         <button onclick="scrollToSection('when-watching')" class="mt-4 bg-white text-purple-500 py-2 px-4 rounded hover:bg-gray-100 transition duration-300">
             Next
         </button>
     </section>
 
-    <section id="when-watching" class="text-center">
+    <section id="when-watching" class="min-h-screen flex flex-col justify-center items-center text-center">
         <h2 class="text-3xl font-bold mb-4">When You're Watching</h2>
         <div class="relative">
             <h3 id="heatmapTitle" class="text-2xl font-semibold mb-2">Times of Day</h3>
@@ -54,9 +54,9 @@
         </button>
     </section>
 
-    <section id="watchers" class="text-center">
+    <section id="watchers" class="min-h-screen flex flex-col justify-center items-center text-center">
         <h2 class="text-3xl font-bold mb-4">Who's Watching You?</h2>
-        <div class="w-full h-64">
+        <div class="w-full h-96 flex justify-center items-center">
             <canvas id="watchersChart"></canvas>
         </div>
         <button onclick="scrollToSection('advice')" class="mt-4 bg-white text-purple-500 py-2 px-4 rounded hover:bg-gray-100 transition duration-300">
@@ -64,13 +64,16 @@
         </button>
     </section>
 
-    <section id="advice" class="text-center">
+    <section id="advice" class="min-h-screen flex flex-col justify-center items-center text-center">
         <h2 class="text-3xl font-bold mb-4">Agent Advice</h2>
         <ul class="list-disc list-inside text-left max-w-md mx-auto">
             {% for advice in data.advice %}
             <li class="mb-2">{{ advice }}</li>
             {% endfor %}
         </ul>
+        <a href="{{ url_for('index') }}" class="bg-white text-purple-500 py-2 px-4 rounded hover:bg-gray-100 transition duration-300">
+            Return to Login
+        </a>
     </section>
 </div>
 {% endblock %}
