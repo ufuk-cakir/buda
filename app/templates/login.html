@@ -3,9 +3,9 @@
 {% block content %}
 <div class="flex items-center justify-center min-h-screen">
     <div class="bg-white rounded-lg shadow-xl p-8 w-96">
-        <h1 class="text-2xl font-bold text-center text-gray-800 mb-6">Instagram Analytics</h1>
+        <h1 class="text-2xl font-bold text-center text-gray-800 mb-6">Instagram Content Consumption</h1>
         <div class="space-y-4">
-            <button class="w-full bg-pink-500 text-white py-2 px-4 rounded hover:bg-pink-600 transition duration-300">
+            <button action="{{ url_for('insta_login') }}" method="post" class="w-full bg-pink-500 text-white py-2 px-4 rounded hover:bg-pink-600 transition duration-300">
                 <i class="fab fa-instagram mr-2"></i> Sign in with Instagram
             </button>
             <a href="{{ url_for('upload') }}" class="block w-full bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition duration-300 text-center">
