@@ -1,0 +1,148 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="space-y-12">
+    <section id="summary" class="text-center">
+        <h2 class="text-3xl font-bold mb-4">Summary</h2>
+        <p class="text-xl mb-4">{{ data.summary }}</p>
+        <button onclick="scrollToSection('stats')" class="bg-white text-purple-500 py-2 px-4 rounded hover:bg-gray-100 transition duration-300">
+            Dive Deeper
+        </button>
+    </section>
+
+    <section id="stats" class="text-center">
+        <h2 class="text-3xl font-bold mb-4">Your Stats</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            {% for title, value in data.stats.items() %}
+            <div class="bg-white rounded-lg p-4 text-gray-800">
+                <h3 class="text-xl font-semibold mb-2">{{ title|capitalize }}</h3>
+                <p class="text-4xl font-bold">{{ value }}</p>
+            </div>
+            {% endfor %}
+        </div>
+        <button onclick="scrollToSection('watching')" class="mt-4 bg-white text-purple-500 py-2 px-4 rounded hover:bg-gray-100 transition duration-300">
+            Next
+        </button>
+    </section>
+
+    <section id="watching" class="text-center">
+        <h2 class="text-3xl font-bold mb-4">Who You're Watching</h2>
+        <div class="w-full h-64">
+            <canvas id="watchingChart"></canvas>
+        </div>
+        <button onclick="scrollToSection('when-watching')" class="mt-4 bg-white text-purple-500 py-2 px-4 rounded hover:bg-gray-100 transition duration-300">
+            Next
+        </button>
+    </section>
+
+    <section id="when-watching" class="text-center">
+        <h2 class="text-3xl font-bold mb-4">When You're Watching</h2>
+        <div class="relative">
+            <h3 id="heatmapTitle" class="text-2xl font-semibold mb-2">Times of Day</h3>
+            <div class="bg-white rounded-lg p-4">
+                <canvas id="heatmapChart"></canvas>
+            </div>
+            <button onclick="changeHeatmap('prev')" class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-white text-purple-500 py-2 px-4 rounded-full hover:bg-gray-100 transition duration-300">
+                &lt;
+            </button>
+            <button onclick="changeHeatmap('next')" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-white text-purple-500 py-2 px-4 rounded-full hover:bg-gray-100 transition duration-300">
+                &gt;
+            </button>
+        </div>
+        <button onclick="scrollToSection('watchers')" class="mt-4 bg-white text-purple-500 py-2 px-4 rounded hover:bg-gray-100 transition duration-300">
+            Next
+        </button>
+    </section>
+
+    <section id="watchers" class="text-center">
+        <h2 class="text-3xl font-bold mb-4">Who's Watching You?</h2>
+        <div class="w-full h-64">
+            <canvas id="watchersChart"></canvas>
+        </div>
+        <button onclick="scrollToSection('advice')" class="mt-4 bg-white text-purple-500 py-2 px-4 rounded hover:bg-gray-100 transition duration-300">
+            Next
+        </button>
+    </section>
+
+    <section id="advice" class="text-center">
+        <h2 class="text-3xl font-bold mb-4">Agent Advice</h2>
+        <ul class="list-disc list-inside text-left max-w-md mx-auto">
+            {% for advice in data.advice %}
+            <li class="mb-2">{{ advice }}</li>
+            {% endfor %}
+        </ul>
+    </section>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+    const watchingData = {{ data.watching|tojson }};
+    const watchersData = {{ data.watchers|tojson }};
+    const heatmapData = {{ data.heatmaps|tojson }};
+
+    // Watching Chart
+    new Chart(document.getElementById('watchingChart'), {
+        type: 'pie',
+        data: {
+            labels: watchingData.map(item => item.name),
+            datasets: [{
+                data: watchingData.map(item => item.value),
+                backgroundColor: ['#0088FE', '#00C49F', '#FFBB28', '#FF8042']
+            }]
+        }
+    });
+
+    // Watchers Chart
+    new Chart(document.getElementById('watchersChart'), {
+        type: 'pie',
+        data: {
+            labels: watchersData.map(item => item.name),
+            datasets: [{
+                data: watchersData.map(item => item.value),
+                backgroundColor: ['#0088FE', '#00C49F', '#FFBB28', '#FF8042']
+            }]
+        }
+    });
+
+    // Heatmap Chart
+    let currentHeatmap = 'times_of_day';
+    const heatmapChart = new Chart(document.getElementById('heatmapChart'), {
+        type: 'heatmap',
+        data: {
+            datasets: [{
+                data: heatmapData[currentHeatmap].flat().map((value, index) => ({
+                    x: index % 12,
+                    y: Math.floor(index / 12),
+                    v: value
+                })),
+            }]
+        },
+        options: {
+            plugins: {
+                legend: { display: false },
+            },
+            scales: {
+                x: { type: 'linear', min: 0, max: 11 },
+                y: { type: 'linear', min: 0, max: 6 }
+            }
+        }
+    });
+
+    function changeHeatmap(direction) {
+        currentHeatmap = currentHeatmap === 'times_of_day' ? 'days_of_week' : 'times_of_day';
+        document.getElementById('heatmapTitle').textContent = currentHeatmap === 'times_of_day' ? 'Times of Day' : 'Days of Week';
+        heatmapChart.data.datasets[0].data = heatmapData[currentHeatmap].flat().map((value, index) => ({
+            x: index % (currentHeatmap === 'times_of_day' ? 12 : 7),
+            y: Math.floor(index / (currentHeatmap === 'times_of_day' ? 12 : 7)),
+            v: value
+        }));
+        heatmapChart.options.scales.x.max = currentHeatmap === 'times_of_day' ? 11 : 6;
+        heatmapChart.update();
+    }
+
+    function scrollToSection(id) {
+        document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+    }
+</script>
+{% endblock %}
