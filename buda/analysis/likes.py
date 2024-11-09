@@ -2,6 +2,9 @@ from ..utils import load_data
 import matplotlib.pyplot as plt
 from datetime import datetime
 from collections import Counter
+import numpy as np
+from scipy.stats import gaussian_kde
+import seaborn as sns
 
 
 def calculate_total_likes(data):
@@ -39,6 +42,37 @@ def plot_hourly_activity(hourly_activity):
     plt.xticks(range(0, 24))
     plt.show()
 
+def plot_hourly_activity_circle(hourly_activity):
+    """Plot the number of likes by hour of the day in a circle."""
+    hours = np.array(list(hourly_activity.keys()))
+    counts = np.array(list(hourly_activity.values()))
+
+    # sort both hours and counts arrays by hours
+    idx = np.argsort(hours)
+    hours = hours[idx]
+    counts = counts[idx]
+
+    angles = np.linspace(0, 2 * np.pi, len(hours), endpoint=False)
+    angles = np.concatenate((angles, [angles[0]]))
+    counts = np.concatenate((counts, [counts[0]]))
+
+    fig, ax = plt.subplots(subplot_kw={"projection": "polar"})
+    sns.set(style="white")
+    ax.grid(color='gray', linestyle='--', linewidth=0.5)
+
+    ax.fill(angles, counts, color="deepskyblue", alpha=0.6)
+    # ax.plot(angles, counts, color="blue", linewidth=2)
+
+    ax.set_yticklabels([])
+    ax.set_rticks([])
+
+    ax.set_theta_offset(np.pi / 2)
+    ax.set_theta_direction(-1)
+    ax.set_thetagrids(angles[:-1] * 180 / np.pi, labels=hours)
+
+    plt.title("Instagram Activity by Hour")
+    plt.show()
+
 
 def analyze_likes(data):
     """Analyze likes data and display statistics and plot."""
@@ -47,4 +81,4 @@ def analyze_likes(data):
     hourly_activity = count_hourly_activity(hours)
     display_statistics(total_likes, hourly_activity)
     plot_hourly_activity(hourly_activity)
-
+    plot_hourly_activity_circle(hourly_activity)
