@@ -1,0 +1,95 @@
+{
+    "ig_custom_audiences_all_types": [
+      {
+        "advertiser_name": "ADARA",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false,
+        "category": "Travel"
+      },
+      {
+        "advertiser_name": "Liquid I.V.",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false,
+        "category": "Health"
+      },
+      {
+        "advertiser_name": "The Motherhood Inc.",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false,
+        "category": "Media"
+      },
+      {
+        "advertiser_name": "Code3",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false,
+        "category": "Marketing"
+      },
+      {
+        "advertiser_name": "Spotify",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": true,
+        "has_in_person_store_visit": false,
+        "category": "Entertainment"
+      },
+      {
+        "advertiser_name": "Netflix",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": true,
+        "has_in_person_store_visit": false,
+        "category": "Entertainment"
+      },
+      {
+        "advertiser_name": "Amazon",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": true,
+        "has_in_person_store_visit": true,
+        "category": "E-commerce"
+      },
+      {
+        "advertiser_name": "Apple",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": true,
+        "has_in_person_store_visit": true,
+        "category": "Technology"
+      },
+      {
+        "advertiser_name": "Google",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": true,
+        "has_in_person_store_visit": true,
+        "category": "Technology"
+      },
+      {
+        "advertiser_name": "Microsoft",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": true,
+        "category": "Technology"
+      },
+      {
+        "advertiser_name": "Samsung",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": true,
+        "category": "Electronics"
+      },
+      {
+        "advertiser_name": "Nike",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": true,
+        "has_in_person_store_visit": true,
+        "category": "Sportswear"
+      },
+      {
+        "advertiser_name": "Coca-Cola",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": true,
+        "category": "Beverage"
+      }
+    ]
+  }
