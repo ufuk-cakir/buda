@@ -52,12 +52,13 @@ def index():
     return render_template("login.html")
 
 
-# Note not yet working!!!!
 @app.route("/insta_login", methods=["POST"])
 def insta_login():
-    print("Test")
-    flash("Functionally not ready")
+    # Flash the message
+    flash("Functionality not ready")
     return render_template("login.html")
+    # Redirect the user back to the home page or any other page
+    # return redirect(url_for("login"))  # You can also redirect to a different page
 
 
 @app.route("/upload", methods=["GET", "POST"])
