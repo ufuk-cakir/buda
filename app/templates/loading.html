@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="flex flex-col items-center justify-center min-h-screen">
+    <div class="animate-spin rounded-full h-32 w-32 border-t-2 border-b-2 border-white"></div>
+    <p class="mt-4 text-xl font-semibold">Analyzing your data...</p>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+    // Simulate data processing and redirect to results page after 3 seconds
+    setTimeout(() => {
+        window.location.href = "{{ url_for('results') }}";
+    }, 3000);
+</script>
+{% endblock %}
