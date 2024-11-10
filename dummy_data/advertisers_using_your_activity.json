@@ -1,0 +1,1264 @@
+{
+    "ig_custom_audiences_all_types": [
+      {
+        "advertiser_name": "ADARA",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "Liquid I.V.",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "The Motherhood Inc.",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "Code3",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "GetSmarter",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "Mindshare Worldwide - GBP Account",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "Coalition Music",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "CED LLC",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "Alumery",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "Vocal Transformation",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "Aim High",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "The Prospect Building",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "Scentiment",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "HK luckstar",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "Mainline Menswear Ltd",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "Live Nation Toledo",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "Young Chinese Dogs",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "Laminat DEPOT",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "3D Technologies",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "Ashley",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "wirhier_magazin",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "Walmart.com",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "Murphy Hospitality Group",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "GCI Health",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "Opus One",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "Baltimore Soundstage",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "Achtung GmbH",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "PureWow",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "Disney Kids Networks",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "\u00e6\u0081\u00b5\u00e6\u00af\u0094\u00e5\u00af\u00bf\u00e3\u0083\u009a\u00e3\u0083\u00bc\u00e3\u0082\u00b8",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "get in IT",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "Reprise Chile",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "Resolution Media",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "Alueny UY",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "JOE.ie",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "Selekkt Digital GmbH",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "Daniel Koek",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "FRAME CHAIN",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "GOPA Com.",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "direct interactive",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "Republika Agency",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "ELC T\u00c3\u00bcrkiye",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "AD Dynamo Nigeria",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "Normal Null",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "earnesto",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "\u00f0\u009f\u008c\u0099JOHANNA L\u00c3\u0096ER",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "Amazfit",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "Epic Games",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "WISO Steuer",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "Saphira",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "Swoon",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "Warner Music Poland",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "800 Pound Gorilla Media",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "Lincoln Hall + Schubas",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "WTB",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "GroupM Danmark",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "Makeup.com by L'Oreal",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "PERL Cosmetics",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "Xpand Group",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "IW Medien",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "Media Works, Ltd.",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "Premiere Speakers Bureau",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "BMG | Australia",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "Westfield Les 4 Temps",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "Culture Crave",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "Chelsey & Stephen",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "Performance Marketing - USD - Spotify AB",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "Disney",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "Pabst Theater Group",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "Kikillo Pieces",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "Manuel Schottm\u00c3\u00bcller",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "HOMEMADE MERCH",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "SKIMS",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "Der Freitag",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "boohoo.com",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "Socialyse Adm FR",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "RDS Digital Solutions Hong Kong",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "VIPrize",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "Mokumono Cycles",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "Bravado",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "That Lot",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "Goygoy Network",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "Personalwerk GmbH",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "RAWR SZN LLC",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "Deep Root Records",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "P&G Social Media NA",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "Club Glow",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "All Things Live Italy",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "Neuffer Fenster + T\u00c3\u00bcren GmbH",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "capetelski",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "Buddybrand",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "LC Waikiki",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "Hourglass Cosmetics",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "The Poster Club",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "PUJA Pet",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "AgProp",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "Basepaws",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "Musical Earth",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "Teletech",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "ViewYork Media",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "The Farmer's Dog",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "Mix-Markt",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "Globe Hall",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "Carry-On Publishing Gmbh",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "Kun Academy",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "HPH Ltd",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "Websolute",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "Shelf Inc.",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "Neko Test Page",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "MS",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "Star Walk",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "Str\u00c3\u00b6er Social Publishing GmbH",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "Lobster & Lemonade Apparel",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "London Evening Standard",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "Industrie Clothing",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "Peluva",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "Fused - Universal Music",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "Jakob Juul",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "CASocial",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "Actorvate",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "Hamburger Haenger",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "Top status",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "Lotto 6aus49, Eurojackpot & Co",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "K\u00c3\u00b6nigsteiner Digital",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "Hochburg",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "AchieveYou",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "Axel Springer ACS",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "Patrick Bet-David",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "Dentsu Creative Germany",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "Boxinton",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "Holdit",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "Collectively",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "Makeship",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "La Bande, l'agence",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "NIRO Media",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "Tower Theatre OKC",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "semcona GmbH",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "Arts In Square",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "SMEPL",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "Pulpmedia",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "HygieneLab",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "It's a 10",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "esome advertising technologies GmbH",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "Meller",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "The Crofoot Ads",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "dlg.soundwaves",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "Reprise Canada",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "All Things Live Denmark",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "Snipes",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "Nitsa Club",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "Ben",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "WP BrandStudio",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "Virtue Labs",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "Cozey",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "ADA Music",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "Today's Business",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "Bj\u00c3\u00b6rn Borg",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "Psyko Steve",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "Krusteaz",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "Blue State",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "Singer & Kierek",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "WorkMoney",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "BSTN Store",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "Zales",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "Northlich",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "Random House",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "Luxury Brand Partners",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "Insight-ful",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "Spreequell",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "Cancer Council Australia",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "Marathon Live",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "Metro Chicago",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "Classictic",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "Redoggo",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "DraftLine Germany",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "TEG Live Europe",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "HDI Versicherung",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "Interparfums",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "Emel Geris",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "Postery",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "Selfie Leslie AU",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "POSTERA",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "Chris LaRocca",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "Medialabel",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "The Archbishop of Banterbury",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "McKinney",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "WIP",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "ESPN",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "Rentumo ApS",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "We Are Era",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "Music Box",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "Ethnotek Europe",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "Ancestry",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "Mediacom WW x TCCC",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "Discovery Accounts",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "Performance Recruiting GmbH",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "Garde_malade",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "Genesis Publications",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "Angel City Management",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "Smashbox Cosmetics",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "Champion Petfoods",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "Hanna Andersson",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "PetSafe Brand",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "Konzertb\u00c3\u00bcro Schoneberg GmbH",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "CareerTest by Universum",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "UMe Music Team",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "SawatzkiM\u00c3\u00bchlenbruch",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "Universal Music Polska",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "Unilever",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "Charlie Johnson",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": false
+      }
+    ]
+}
