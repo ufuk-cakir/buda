@@ -17,8 +17,8 @@ author = 'Ufuk Cakir'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
-    "nbsphinx",
-    "nbsphinx_link",
+   # "nbsphinx",
+   # "nbsphinx_link",
     "sphinx_mdinclude",
     "sphinx.ext.autodoc",
     "sphinx_rtd_theme",
