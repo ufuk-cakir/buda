@@ -7,10 +7,10 @@
 
 ## Installation
 
-The Python package `buda` can be installed from PyPI:
+The Python package `buda` can be installed by downloading this repo and then running the following:
 
 ```
-python -m pip install buda
+pip install .
 ```
 
 ## Development installation
