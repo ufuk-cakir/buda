@@ -1,8 +1,8 @@
 {% extends "base.html" %}
 
 {% block content %}
-<div class="space-y-12">
-    <section id="summary" class="text-center">
+<div class="space-y-0">
+    <section id="summary" class="min-h-screen flex flex-col justify-center items-center text-center">
         <h2 class="text-3xl font-bold mb-4">Summary</h2>
         <p class="text-xl mb-4">{{ data.summary }}</p>
         <button onclick="scrollToSection('stats')" class="bg-white text-purple-500 py-2 px-4 rounded hover:bg-gray-100 transition duration-300">
@@ -10,7 +10,7 @@
         </button>
     </section>
 
-    <section id="stats" class="text-center">
+    <section id="stats" class="min-h-screen flex flex-col justify-center items-center text-center">
         <h2 class="text-3xl font-bold mb-4">Your Stats</h2>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
             {% for title, value in data.stats.items() %}
@@ -25,27 +25,27 @@
         </button>
     </section>
 
-    <section id="watching" class="text-center">
+    <section id="watching" class="min-h-screen flex flex-col justify-center items-center text-center">
         <h2 class="text-3xl font-bold mb-4">Who You're Watching</h2>
-        <div class="w-full h-64">
-            <canvas id="watchingChart"></canvas>
+        <div class="w-full h-96 flex justify-center items-center">
+            <canvas id="watchingChart" width="400" height="400"></canvas>
         </div>
         <button onclick="scrollToSection('when-watching')" class="mt-4 bg-white text-purple-500 py-2 px-4 rounded hover:bg-gray-100 transition duration-300">
             Next
         </button>
     </section>
 
-    <section id="when-watching" class="text-center">
+    <section id="when-watching" class="min-h-screen flex flex-col justify-center items-center text-center">
         <h2 class="text-3xl font-bold mb-4">When You're Watching</h2>
         <div class="relative">
-            <h3 id="heatmapTitle" class="text-2xl font-semibold mb-2">Times of Day</h3>
+            <h3 id="chartTitle" class="text-2xl font-semibold mb-2">Times of Day</h3>
             <div class="bg-white rounded-lg p-4">
-                <canvas id="heatmapChart"></canvas>
+                <canvas id="spiderChart"></canvas>
             </div>
-            <button onclick="changeHeatmap('prev')" class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-white text-purple-500 py-2 px-4 rounded-full hover:bg-gray-100 transition duration-300">
+            <button onclick="changeChart('prev')" class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-white text-purple-500 py-2 px-4 rounded-full hover:bg-gray-100 transition duration-300">
                 &lt;
             </button>
-            <button onclick="changeHeatmap('next')" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-white text-purple-500 py-2 px-4 rounded-full hover:bg-gray-100 transition duration-300">
+            <button onclick="changeChart('next')" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-white text-purple-500 py-2 px-4 rounded-full hover:bg-gray-100 transition duration-300">
                 &gt;
             </button>
         </div>
@@ -54,9 +54,9 @@
         </button>
     </section>
 
-    <section id="watchers" class="text-center">
+    <section id="watchers" class="min-h-screen flex flex-col justify-center items-center text-center">
         <h2 class="text-3xl font-bold mb-4">Who's Watching You?</h2>
-        <div class="w-full h-64">
+        <div class="w-full h-96 flex justify-center items-center">
             <canvas id="watchersChart"></canvas>
         </div>
         <button onclick="scrollToSection('advice')" class="mt-4 bg-white text-purple-500 py-2 px-4 rounded hover:bg-gray-100 transition duration-300">
@@ -64,46 +64,88 @@
         </button>
     </section>
 
-    <section id="advice" class="text-center">
+    <section id="advice" class="min-h-screen flex flex-col justify-center items-center text-center">
         <h2 class="text-3xl font-bold mb-4">Agent Advice</h2>
         <ul class="list-disc list-inside text-left max-w-md mx-auto">
             {% for advice in data.advice %}
             <li class="mb-2">{{ advice }}</li>
             {% endfor %}
         </ul>
+        <a href="{{ url_for('index') }}" class="bg-white text-purple-500 py-2 px-4 rounded hover:bg-gray-100 transition duration-300">
+            Return to Login
+        </a>
     </section>
 </div>
 {% endblock %}
 
 {% block scripts %}
 <script>
+    Chart.defaults.set('plugins.datalabels', {
+        color: '#FE777B'
+    });
     const watchingData = {{ data.watching|tojson }};
     const watchersData = {{ data.watchers|tojson }};
-    const heatmapData = {{ data.heatmaps|tojson }};
+    const whenData = {{ data.heatmaps|tojson }};
 
     // Watching Chart
     new Chart(document.getElementById('watchingChart'), {
-        type: 'pie',
+        type: 'doughnut',
         data: {
             labels: watchingData.map(item => item.name),
             datasets: [{
                 data: watchingData.map(item => item.value),
-                backgroundColor: ['#0088FE', '#00C49F', '#FFBB28', '#FF8042']
+                // backgroundColor: ['#0088FE', '#00C49F', '#FFBB28', '#FF8042']
             }]
         }
     });
 
     // Watchers Chart
     new Chart(document.getElementById('watchersChart'), {
-        type: 'pie',
+        type: 'doughnut',
+        plugins: ["ChartDataLabels"],
         data: {
-            labels: watchersData.map(item => item.name),
+            labels: Object.keys(watchersData), // Labels based on the keys of watchersData
             datasets: [{
-                data: watchersData.map(item => item.value),
-                backgroundColor: ['#0088FE', '#00C49F', '#FFBB28', '#FF8042']
+                label: "Companies tracking your data ",
+                data: Object.values(watchersData), // Data based on the values of watchersData
+                // backgroundColor: ['#FF6384', '#36A2EB', '#FFCE56', '#4BC0C0', '#9966FF', '#FF9F40'], // Custom slice colors
             }]
+        },
+        options: {
+            responsive: true,
+            plugins: {
+                datalabels: {
+                // Position labels outside the doughnut chart
+                anchor: 'end',    // Position label outside the slice
+                align: 'end',   // Align labels to the outside
+                color: '#fff',    // Set the label color to white
+                font: {
+                    size: 14,     // Font size for the labels
+                    weight: 'bold', // Make the label bold
+                },
+                formatter: function (value, context) {
+                    return context.chart.data.labels[context.dataIndex]; // Display the label (name)
+                },
+                // Optional: Add some distance from the slice for better readability
+                offset: 1
+            },
+                legend: {
+                    display: false
+                }
+            },
+            layout: {
+            padding: {
+                top: 10,    // Add padding at the top to ensure labels aren't cut off
+                left: 70,   // Add padding to the left
+                right: 50,  // Add padding to the right
+                bottom: 10  // Add padding to the bottom
+            }
         }
-    });
+        },
+        plugins: [ChartDataLabels]
+
+});
+
 
     // Heatmap Chart
     let currentHeatmap = 'times_of_day';
@@ -143,6 +185,76 @@
 
     function scrollToSection(id) {
         document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+    }
+</script>
+
+<script>
+    const dailyData = {{ data.daily_activity|tojson }};
+    const hourlyData = {{ data.hourly_activity|tojson }};
+
+
+    // Data for the radar chart (Spider diagram)
+    const radar_data = {
+        labels: Object.keys(hourlyData), 
+        datasets: [{
+            label: 'Number of likes per hour',
+            data: Object.values(hourlyData), 
+            fill: true,
+            backgroundColor: 'rgba(0, 123, 255, 0.2)', // Light blue background
+            borderColor: 'rgba(0, 123, 255, 1)', // Blue border
+            borderWidth: 2
+        }]
+    };
+
+    const config = {
+        type: 'radar',
+        data: radar_data,
+        options: {
+            scales: {
+                r: {
+                    angleLines: { display: true },
+                    suggestedMin: 0,
+                    suggestedMax: 100
+                }
+            },
+            plugins: {
+                // legend: {
+                // display: false // This hides the chart legend (key)
+                // },
+                title: {
+                    display: false // This hides the chart title
+                }
+            }
+        }
+    };
+
+    // Create radar chart
+    const ctx = document.getElementById('spiderChart').getContext('2d');
+    const spiderChart = new Chart(ctx, config);
+
+    // Change the chart (example)
+    function changeChart(direction) {
+        if (direction === 'next') {
+            // Here you could update the chart data dynamically
+            spiderChart.data.datasets[0].data = Object.values(dailyData);
+            spiderChart.data.labels = Object.keys(dailyData)
+            document.getElementById("chartTitle").innerText = "Days of the week";
+            spiderChart.data.datasets[0].label = 'Number of likes per day';
+
+        } else if (direction === 'prev') {
+            // Go back to previous data
+            spiderChart.data.datasets[0].data = Object.values(hourlyData), 
+            spiderChart.data.labels = Object.keys(hourlyData)
+            document.getElementById("chartTitle").innerText = "Times of Day";
+            spiderChart.data.datasets[0].label = 'Number of likes per hour';
+        }
+        spiderChart.update();
+    }
+
+    // Scroll to next section
+    function scrollToSection(sectionId) {
+        const section = document.getElementById(sectionId);
+        section.scrollIntoView({ behavior: 'smooth' });
     }
 </script>
 {% endblock %}
