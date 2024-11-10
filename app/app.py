@@ -44,6 +44,32 @@ mock_data = {
         "Post more content during peak engagement times to increase your reach.",
         "Engage more with your top followers to boost your account's visibility.",
     ],
+    "hourly_activity": {
+        "16": 50,
+        "17": 49,
+        "13": 33,
+        "8": 36,
+        "19": 39,
+        "12": 35,
+        "9": 39,
+        "18": 49,
+        "15": 42,
+        "23": 10,
+        "21": 18,
+        "11": 38,
+        "5": 72,
+        "10": 31,
+        "6": 51,
+        "14": 20,
+        "0": 4,
+        "20": 63,
+        "7": 37,
+        "22": 8,
+        "3": 2,
+        "4": 12,
+        "1": 1,
+        "2": 2,
+    },
 }
 
 
@@ -65,11 +91,8 @@ def insta_login():
 def upload():
     if request.method == "POST":
         if request.files["file"].filename == "":
-            # print("error")
             flash("No file uploaded")
             return render_template("upload.html")
-        # Here you would handle the file upload
-        # For now, we'll just redirect to the loading page
         return redirect(url_for("loading"))
     return render_template("upload.html")
 

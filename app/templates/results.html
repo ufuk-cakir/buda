@@ -38,14 +38,14 @@
     <section id="when-watching" class="min-h-screen flex flex-col justify-center items-center text-center">
         <h2 class="text-3xl font-bold mb-4">When You're Watching</h2>
         <div class="relative">
-            <h3 id="heatmapTitle" class="text-2xl font-semibold mb-2">Times of Day</h3>
+            <h3 id="chartTitle" class="text-2xl font-semibold mb-2">Times of Day (Radar Chart)</h3>
             <div class="bg-white rounded-lg p-4">
-                <canvas id="heatmapChart"></canvas>
+                <canvas id="spiderChart"></canvas>
             </div>
-            <button onclick="changeHeatmap('prev')" class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-white text-purple-500 py-2 px-4 rounded-full hover:bg-gray-100 transition duration-300">
+            <button onclick="changeChart('prev')" class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-white text-purple-500 py-2 px-4 rounded-full hover:bg-gray-100 transition duration-300">
                 &lt;
             </button>
-            <button onclick="changeHeatmap('next')" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-white text-purple-500 py-2 px-4 rounded-full hover:bg-gray-100 transition duration-300">
+            <button onclick="changeChart('next')" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-white text-purple-500 py-2 px-4 rounded-full hover:bg-gray-100 transition duration-300">
                 &gt;
             </button>
         </div>
@@ -82,7 +82,7 @@
 <script>
     const watchingData = {{ data.watching|tojson }};
     const watchersData = {{ data.watchers|tojson }};
-    const heatmapData = {{ data.heatmaps|tojson }};
+    const whenData = {{ data.heatmaps|tojson }};
 
     // Watching Chart
     new Chart(document.getElementById('watchingChart'), {
@@ -146,6 +146,63 @@
 
     function scrollToSection(id) {
         document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+    }
+</script>
+
+<script>
+    const hourlyData = {{ data.hourly_activity|tojson }};
+
+    // Data for the radar chart (Spider diagram)
+    const radar_data = {
+        labels: Object.keys(hourlyData), //['Morning', 'Afternoon', 'Evening', 'Night'],
+        datasets: [{
+            label: 'Times of Day',
+            data: Object.values(hourlyData), //[65, 59, 90, 81], // Example values
+            fill: true,
+            backgroundColor: 'rgba(0, 123, 255, 0.2)', // Light blue background
+            borderColor: 'rgba(0, 123, 255, 1)', // Blue border
+            borderWidth: 2
+        }]
+    };
+
+    const config = {
+        type: 'radar',
+        data: radar_data,
+        options: {
+            scales: {
+                r: {
+                    angleLines: { display: true },
+                    suggestedMin: 0,
+                    suggestedMax: 100
+                }
+            }
+        }
+    };
+
+    // Create radar chart
+    const ctx = document.getElementById('spiderChart').getContext('2d');
+    const spiderChart = new Chart(ctx, config);
+
+    // Change the chart (example)
+    function changeChart(direction) {
+        if (direction === 'next') {
+            // Here you could update the chart data dynamically
+            spiderChart.data.datasets[0].data = [80, 75, 60, 90]; // New data for example
+            spiderChart.data.labels = ['Morning', 'Lunch', 'Afternoon', 'Evening']
+
+        } else if (direction === 'prev') {
+            // Go back to previous data
+            spiderChart.data.datasets[0].data = [65, 59, 90, 81];
+            spiderChart.data.labels = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
+
+        }
+        spiderChart.update();
+    }
+
+    // Scroll to next section
+    function scrollToSection(sectionId) {
+        const section = document.getElementById(sectionId);
+        section.scrollIntoView({ behavior: 'smooth' });
     }
 </script>
 {% endblock %}
