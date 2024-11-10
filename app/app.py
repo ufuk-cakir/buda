@@ -8,7 +8,7 @@ app.secret_key = b"concon/"
 # Mock data (in a real application, this would come from a database)
 mock_data = {
     "summary": "Your Instagram engagement is above average!",
-    "stats": {"likes": 1234, "comments": 567, "posts_viewed": 8901},
+    "stats": {"likes": 1614, "comments": 258, "videos watched \n this week": 1224},
     "watching": [
         {"name": "Account A", "value": 400},
         {"name": "Account B", "value": 300},
