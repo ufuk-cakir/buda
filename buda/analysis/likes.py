@@ -3,8 +3,7 @@ import matplotlib.pyplot as plt
 from datetime import datetime
 from collections import Counter
 import numpy as np
-from scipy.stats import gaussian_kde
-import seaborn as sns
+
 
 
 def calculate_total_likes(data):
