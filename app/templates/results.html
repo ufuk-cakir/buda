@@ -38,7 +38,7 @@
     <section id="when-watching" class="min-h-screen flex flex-col justify-center items-center text-center">
         <h2 class="text-3xl font-bold mb-4">When You're Watching</h2>
         <div class="relative">
-            <h3 id="chartTitle" class="text-2xl font-semibold mb-2">Times of Day (Radar Chart)</h3>
+            <h3 id="chartTitle" class="text-2xl font-semibold mb-2">Times of Day</h3>
             <div class="bg-white rounded-lg p-4">
                 <canvas id="spiderChart"></canvas>
             </div>
@@ -156,7 +156,7 @@
     const radar_data = {
         labels: Object.keys(hourlyData), 
         datasets: [{
-            label: 'Times of Day',
+            label: 'Number of likes per hour',
             data: Object.values(hourlyData), 
             fill: true,
             backgroundColor: 'rgba(0, 123, 255, 0.2)', // Light blue background
@@ -175,6 +175,14 @@
                     suggestedMin: 0,
                     suggestedMax: 100
                 }
+            },
+            plugins: {
+                // legend: {
+                // display: false // This hides the chart legend (key)
+                // },
+                title: {
+                    display: false // This hides the chart title
+                }
             }
         }
     };
@@ -189,11 +197,15 @@
             // Here you could update the chart data dynamically
             spiderChart.data.datasets[0].data = [65, 59, 90, 81];
             spiderChart.data.labels = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
+            document.getElementById("chartTitle").innerText = "Days of the week";
+            spiderChart.data.datasets[0].label = 'Number of likes per day';
 
         } else if (direction === 'prev') {
             // Go back to previous data
             spiderChart.data.datasets[0].data = Object.values(hourlyData), 
             spiderChart.data.labels = Object.keys(hourlyData)
+            document.getElementById("chartTitle").innerText = "Times of Day";
+            spiderChart.data.datasets[0].label = 'Number of likes per hour';
         }
         spiderChart.update();
     }
