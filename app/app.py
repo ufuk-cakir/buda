@@ -113,13 +113,9 @@ def results():
         "liked_posts_category_counts.json",
         "day_of_week_activity_danny.json",
         "hour_of_day_likes_danny.json",
+        "advice.json",
     ]
-    data_names = [
-        "watchers",
-        "watching",
-        "daily_activity",
-        "hourly_activity",
-    ]
+    data_names = ["watchers", "watching", "daily_activity", "hourly_activity", "advice"]
     data_directory = "data/"
 
     # Iterate over each file path in the provided list
