@@ -154,10 +154,10 @@
 
     // Data for the radar chart (Spider diagram)
     const radar_data = {
-        labels: Object.keys(hourlyData), //['Morning', 'Afternoon', 'Evening', 'Night'],
+        labels: Object.keys(hourlyData), 
         datasets: [{
             label: 'Times of Day',
-            data: Object.values(hourlyData), //[65, 59, 90, 81], // Example values
+            data: Object.values(hourlyData), 
             fill: true,
             backgroundColor: 'rgba(0, 123, 255, 0.2)', // Light blue background
             borderColor: 'rgba(0, 123, 255, 1)', // Blue border
@@ -187,14 +187,13 @@
     function changeChart(direction) {
         if (direction === 'next') {
             // Here you could update the chart data dynamically
-            spiderChart.data.datasets[0].data = [80, 75, 60, 90]; // New data for example
-            spiderChart.data.labels = ['Morning', 'Lunch', 'Afternoon', 'Evening']
-
-        } else if (direction === 'prev') {
-            // Go back to previous data
             spiderChart.data.datasets[0].data = [65, 59, 90, 81];
             spiderChart.data.labels = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
 
+        } else if (direction === 'prev') {
+            // Go back to previous data
+            spiderChart.data.datasets[0].data = Object.values(hourlyData), 
+            spiderChart.data.labels = Object.keys(hourlyData)
         }
         spiderChart.update();
     }
