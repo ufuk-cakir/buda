@@ -38,7 +38,7 @@
     <section id="when-watching" class="min-h-screen flex flex-col justify-center items-center text-center">
         <h2 class="text-3xl font-bold mb-4">When You're Watching</h2>
         <div class="relative">
-            <h3 id="chartTitle" class="text-2xl font-semibold mb-2">Times of Day</h3>
+            <h3 id="chartTitle" class="text-2xl font-semibold mb-2">Times of Day Within One Year</h3>
             <div class="bg-white rounded-lg p-4">
                 <canvas id="spiderChart"></canvas>
             </div>
@@ -91,12 +91,44 @@
     new Chart(document.getElementById('watchingChart'), {
         type: 'doughnut',
         data: {
-            labels: watchingData.map(item => item.name),
+            labels: Object.keys(watchingData), //watchingData.map(item => item.name),
             datasets: [{
-                data: watchingData.map(item => item.value),
+                data: Object.values(watchingData), //watchingData.map(item => item.value),
                 // backgroundColor: ['#0088FE', '#00C49F', '#FFBB28', '#FF8042']
             }]
+        },
+        options: {
+            responsive: true,
+            plugins: {
+                datalabels: {
+                // Position labels outside the doughnut chart
+                anchor: 'end',    // Position label outside the slice
+                align: 'end',   // Align labels to the outside
+                color: '#fff',    // Set the label color to white
+                font: {
+                    size: 14,     // Font size for the labels
+                    weight: 'bold', // Make the label bold
+                },
+                formatter: function (value, context) {
+                    return context.chart.data.labels[context.dataIndex]; // Display the label (name)
+                },
+                // Optional: Add some distance from the slice for better readability
+                offset: 1
+            },
+                legend: {
+                    display: false
+                }
+            },
+            layout: {
+            padding: {
+                top: 10,    // Add padding at the top to ensure labels aren't cut off
+                left: 70,   // Add padding to the left
+                right: 50,  // Add padding to the right
+                bottom: 10  // Add padding to the bottom
+            }
         }
+        },
+        plugins: [ChartDataLabels]
     });
 
     // Watchers Chart
@@ -197,7 +229,7 @@
     const radar_data = {
         labels: Object.keys(hourlyData), 
         datasets: [{
-            label: 'Number of likes per hour',
+            label: 'Number of likes per hour within one year',
             data: Object.values(hourlyData), 
             fill: true,
             backgroundColor: 'rgba(0, 123, 255, 0.2)', // Light blue background
@@ -238,15 +270,15 @@
             // Here you could update the chart data dynamically
             spiderChart.data.datasets[0].data = Object.values(dailyData);
             spiderChart.data.labels = Object.keys(dailyData)
-            document.getElementById("chartTitle").innerText = "Days of the week";
-            spiderChart.data.datasets[0].label = 'Number of likes per day';
+            document.getElementById("chartTitle").innerText = "Days of the Week Within One Year";
+            spiderChart.data.datasets[0].label = 'Number of likes per day within one year';
 
         } else if (direction === 'prev') {
             // Go back to previous data
             spiderChart.data.datasets[0].data = Object.values(hourlyData), 
             spiderChart.data.labels = Object.keys(hourlyData)
-            document.getElementById("chartTitle").innerText = "Times of Day";
-            spiderChart.data.datasets[0].label = 'Number of likes per hour';
+            document.getElementById("chartTitle").innerText = "Times of Day Within One Year";
+            spiderChart.data.datasets[0].label = 'Number of likes per hour within one year';
         }
         spiderChart.update();
     }
