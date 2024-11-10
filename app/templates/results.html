@@ -80,13 +80,16 @@
 
 {% block scripts %}
 <script>
+    Chart.defaults.set('plugins.datalabels', {
+        color: '#FE777B'
+    });
     const watchingData = {{ data.watching|tojson }};
     const watchersData = {{ data.watchers|tojson }};
     const whenData = {{ data.heatmaps|tojson }};
 
     // Watching Chart
     new Chart(document.getElementById('watchingChart'), {
-        type: 'pie',
+        type: 'doughnut',
         data: {
             labels: watchingData.map(item => item.name),
             datasets: [{
@@ -103,7 +106,7 @@
         data: {
             labels: Object.keys(watchersData), // Labels based on the keys of watchersData
             datasets: [{
-                label: "slices",
+                label: "Companies tracking your data ",
                 data: Object.values(watchersData), // Data based on the values of watchersData
                 // backgroundColor: ['#FF6384', '#36A2EB', '#FFCE56', '#4BC0C0', '#9966FF', '#FF9F40'], // Custom slice colors
             }]
@@ -111,11 +114,35 @@
         options: {
             responsive: true,
             plugins: {
+                datalabels: {
+                // Position labels outside the doughnut chart
+                anchor: 'end',    // Position label outside the slice
+                align: 'end',   // Align labels to the outside
+                color: '#fff',    // Set the label color to white
+                font: {
+                    size: 14,     // Font size for the labels
+                    weight: 'bold', // Make the label bold
+                },
+                formatter: function (value, context) {
+                    return context.chart.data.labels[context.dataIndex]; // Display the label (name)
+                },
+                // Optional: Add some distance from the slice for better readability
+                offset: 1
+            },
                 legend: {
                     display: false
                 }
+            },
+            layout: {
+            padding: {
+                top: 10,    // Add padding at the top to ensure labels aren't cut off
+                left: 70,   // Add padding to the left
+                right: 50,  // Add padding to the right
+                bottom: 10  // Add padding to the bottom
             }
         }
+        },
+        plugins: [ChartDataLabels]
 
 });
 

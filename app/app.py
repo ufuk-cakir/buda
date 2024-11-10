@@ -138,8 +138,6 @@ def results():
         else:
             print(f"File does not exist or is not a JSON file: {file_name}")
 
-    print(data_dict)
-
     return render_template("results.html", data=data_dict)
 
 
