@@ -150,7 +150,9 @@
 </script>
 
 <script>
+    const dailyData = {{ data.daily_activity|tojson }};
     const hourlyData = {{ data.hourly_activity|tojson }};
+
 
     // Data for the radar chart (Spider diagram)
     const radar_data = {
@@ -195,8 +197,8 @@
     function changeChart(direction) {
         if (direction === 'next') {
             // Here you could update the chart data dynamically
-            spiderChart.data.datasets[0].data = [65, 59, 90, 81];
-            spiderChart.data.labels = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
+            spiderChart.data.datasets[0].data = Object.values(dailyData);
+            spiderChart.data.labels = Object.keys(dailyData)
             document.getElementById("chartTitle").innerText = "Days of the week";
             spiderChart.data.datasets[0].label = 'Number of likes per day';
 

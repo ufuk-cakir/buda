@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request, redirect, url_for, flash
 import json
+import os
 
 app = Flask(__name__)
 app.secret_key = b"concon/"
@@ -106,9 +107,40 @@ def loading():
 
 @app.route("/results")
 def results():
-    # In a real application, you would fetch the processed data here
-    # For now, we'll use our mock data
-    return render_template("results.html", data=mock_data)
+    data_dict = mock_data
+    file_names = [
+        "summary_categories.json",
+        "day_of_week_activity.json",
+        "hourly_activity.json",
+    ]
+    data_names = ["watchers", "daily_activity", "hourly_activity"]
+    data_directory = "data/"
+
+    # Iterate over each file path in the provided list
+    for i, file_name in enumerate(file_names):
+        file_path = os.path.join(data_directory, file_name)
+        if os.path.exists(
+            os.path.join(data_directory, file_name)
+        ) and file_name.endswith(".json"):
+            try:
+                with open(file_path, "r") as f:
+                    # Load the JSON data from the file
+                    data = json.load(f)
+
+                    # Append the data to the dictionary
+                    # Assuming data is a dictionary or key-value pairs
+                    data_dict[data_names[i]] = data
+
+            except json.JSONDecodeError:
+                print(f"Error decoding JSON in file: {file_name}")
+            except Exception as e:
+                print(f"An error occurred with file {file_name}: {e}")
+        else:
+            print(f"File does not exist or is not a JSON file: {file_name}")
+
+    print(data_dict)
+
+    return render_template("results.html", data=data_dict)
 
 
 if __name__ == "__main__":
