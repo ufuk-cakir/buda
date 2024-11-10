@@ -110,10 +110,20 @@ def results():
     data_dict = mock_data
     file_names = [
         "summary_categories.json",
-        "day_of_week_activity.json",
-        "hourly_activity.json",
+        "liked_posts_category_counts.json",
+        "day_of_week_activity_danny.json",
+        "hour_of_day_likes_danny.json",
+        "advice.json",
+        "summary.json",
     ]
-    data_names = ["watchers", "daily_activity", "hourly_activity"]
+    data_names = [
+        "watchers",
+        "watching",
+        "daily_activity",
+        "hourly_activity",
+        "advice",
+        "summary",
+    ]
     data_directory = "data/"
 
     # Iterate over each file path in the provided list
@@ -129,6 +139,7 @@ def results():
 
                     # Append the data to the dictionary
                     # Assuming data is a dictionary or key-value pairs
+                    print(data_names[i])
                     data_dict[data_names[i]] = data
 
             except json.JSONDecodeError:
@@ -137,6 +148,8 @@ def results():
                 print(f"An error occurred with file {file_name}: {e}")
         else:
             print(f"File does not exist or is not a JSON file: {file_name}")
+
+    # print(data_dict)
 
     return render_template("results.html", data=data_dict)
 
